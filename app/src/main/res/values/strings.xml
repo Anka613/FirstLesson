@@ -17,4 +17,7 @@
     <string name="equals">=</string>
     <string name="clear">Clear</string>
     <string name="dot">.</string>
+    <string name="cool">Cool</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
 </resources>

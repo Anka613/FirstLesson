@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_img"
-    android:theme="@style/MyCoolStyle">
-
+    android:background="@drawable/background_img">
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonDigit1"
@@ -266,4 +264,42 @@
         app:layout_constraintStart_toStartOf="@+id/buttonDigit1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/radioButtonsGroupChooseTheme"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonOperatorMultiply"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOperatorMultiply"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/radioButtonCoolTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cool"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="491dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLightTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/light"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="491dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonDarkTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dark"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="491dp" />
+    </RadioGroup>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

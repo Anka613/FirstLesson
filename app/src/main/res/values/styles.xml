@@ -11,8 +11,28 @@
     <style name="MyCoolStyle">
         <item name="android:textSize">@dimen/textSize</item>
         <item name="android:textColor">@color/black</item>
-        <item name="colorPrimary">@color/colorButtons</item>
+        <item name="colorPrimary">@color/ginger</item>
         <item name="android:fontFamily">cursive</item>
         <item name="android:textStyle">bold</item>
+        <item name="colorAccent">@color/ginger</item>
+    </style>
+
+    <style name="MyDarkStyle">
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="colorOnPrimary">@android:color/holo_orange_light</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="colorPrimaryDark">@android:color/holo_orange_light</item>
+        <item name="colorAccent">#595959</item>
+    </style>
+
+    <style name="MyLightStyle">
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="actionBarTheme">@color/textColorPrimary_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="colorPrimaryDark">@android:color/darker_gray</item>
+        <item name="colorAccent">@color/blue</item>
     </style>
 </resources>
