@@ -20,4 +20,6 @@
     <string name="cool">Cool</string>
     <string name="light">Light</string>
     <string name="dark">Dark</string>
+    <string name="themes">Themes</string>
+    <string name="calculator">Calculator</string>
 </resources>
