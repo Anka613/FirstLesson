@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.buttonThemesActivity).setOnClickListener(v -> {
             Intent intent = new Intent(this, ChooseThemeActivity.class);
-
             startActivity(intent);
         });
     }
