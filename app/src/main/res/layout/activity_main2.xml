@@ -272,10 +272,28 @@
         android:text="@string/themes"
         app:layout_constraintBottom_toTopOf="@+id/textViewDisplayText"
         app:layout_constraintEnd_toEndOf="@+id/textViewDisplayText"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317" />
+        app:layout_constraintVertical_bias="0.666" />
+
+    <EditText
+        android:id="@+id/textEcho"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="10"
+        android:foregroundTint="@android:color/transparent"
+        android:inputType="text"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonThemesActivity"
+        app:layout_constraintEnd_toStartOf="@+id/buttonThemesActivity"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/textViewDisplayText"
+        app:layout_constraintTop_toTopOf="@+id/buttonThemesActivity"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

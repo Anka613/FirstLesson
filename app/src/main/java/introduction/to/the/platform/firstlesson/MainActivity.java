@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView displayTextView;
     public static final String NameSharedPreference = "LOGIN";
     private static final String AppTheme = "APP_THEME";
+    private final static String TEXT = "PARAM";
 
     Calc calc;
 
@@ -22,6 +23,16 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPref = getSharedPreferences(NameSharedPreference, MODE_PRIVATE);
         setTheme(chooseThemeActivity.codeStyleToStyleResId(sharedPref.getInt(AppTheme, 0)));
         setContentView(R.layout.activity_main2);
+
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        if (bundle == null){
+            return;
+        }
+        String text  = bundle.getString(TEXT); // получить данные из Intent
+        TextView textView = findViewById(R.id.textEcho);
+        String hiText = String.format("%s%s", getString(R.string.hi), text);
+        textView.setText(hiText); // Сохранить их в TextView
 
         displayTextView = findViewById(R.id.textViewDisplayText);
 
@@ -59,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         findViewById(R.id.buttonThemesActivity).setOnClickListener(v -> {
-            Intent intent = new Intent(this, ChooseThemeActivity.class);
-            startActivity(intent);
+            Intent intent2 = new Intent(this, ChooseThemeActivity.class);
+            startActivity(intent2);
         });
     }
 }
